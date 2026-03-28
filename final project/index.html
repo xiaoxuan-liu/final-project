@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZenPet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>🌿 ZenPet</h1>
+      <div id="weather-display">Loading weather...</div>
+    </header>
+
+    <main>
+      <div id="pet-sprite">🐣</div>
+      <div id="pet-mood-label">Happy</div>
+
+      <section id="status-bars">
+        <label>Hunger</label>
+        <progress id="bar-hunger" max="100" value="80"></progress>
+
+        <label>Mood</label>
+        <progress id="bar-mood" max="100" value="80"></progress>
+
+        <label>Energy</label>
+        <progress id="bar-energy" max="100" value="80"></progress>
+      </section>
+
+      <section id="controls">
+        <button id="btn-feed">🍎 Feed</button>
+        <button id="btn-play">🎾 Play</button>
+        <button id="btn-rest">💤 Rest</button>
+      </section>
+      
+      <div id="message-box"></div>
+    </main>
+  </body>
+</html>
